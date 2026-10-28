@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BODART Quentin - Portfolio BTS SIO SISR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%); 
+            scroll-behavior: smooth;
+        }
+        .card { 
+            backdrop-filter: blur(10px); 
+            background: rgba(255,255,255,0.1); 
+            border: 1px solid rgba(59,130,246,0.3); 
+            transition: all 0.3s; 
+        }
+        .card:hover { 
+            transform: scale(1.05); 
+            border-color: #22d3ee; 
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Header -->
+    <header class="bg-black bg-opacity-30 backdrop-blur-sm border-b border-blue-500 sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">BODART Quentin</h1>
+                <div class="flex gap-6">
+                    <a href="#accueil" class="text-gray-300 hover:text-cyan-400 transition">Accueil</a>
+                    <a href="#entreprise" class="text-gray-300 hover:text-cyan-400 transition">Entreprise</a>
+                    <a href="#projets" class="text-gray-300 hover:text-cyan-400 transition">Projets</a>
+                    <a href="#competences" class="text-gray-300 hover:text-cyan-400 transition">Compétences</a>
+                    <a href="#veille" class="text-gray-300 hover:text-cyan-400 transition">Veille</a>
+                    <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Accueil -->
+    <section id="accueil" class="container mx-auto px-6 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+            </div>
+            <h2 class="text-5xl font-bold mb-4">BODART Quentin</h2>
+            <p class="text-xl text-cyan-400 mb-2">Étudiant BTS SIO SISR</p>
+            <p class="text-lg text-gray-300">Solutions d'Infrastructure, Systèmes et Réseaux</p>
+            <p class="text-md text-gray-400 mt-2">En alternance chez Exacompta-Clairefontaine</p>
+            
+            <div class="bg-white bg-opacity-10 rounded-lg p-8 border border-blue-500 border-opacity-30 mt-8">
+                <h3 class="text-2xl font-semibold mb-4">À propos</h3>
+                <p class="text-gray-200 leading-relaxed mb-6">
+                    Passionné par l'informatique et les infrastructures réseau, je suis actuellement en BTS SIO 
+                    option SISR en alternance chez Exacompta-Clairefontaine. Mon parcours au sein du service informatique 
+                    m'a permis de développer des compétences techniques solides en administration système, 
+                    gestion de parc informatique et support utilisateur. J'ai également amélioré mon relationnel 
+                    avec les utilisateurs et les fournisseurs tout en découvrant la complexité et la richesse 
+                    du monde de l'informatique en entreprise.
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition">Télécharger CV</button>
+                    <a href="#contact" class="border-2 border-cyan-400 hover:bg-cyan-400 hover:bg-opacity-20 px-6 py-3 rounded-lg transition inline-block">Me contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entreprise -->
+    <section id="entreprise" class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12">Exacompta-Clairefontaine</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <div class="bg-white bg-opacity-10 rounded-lg p-8 border border-blue-500 border-opacity-30">
+                <h3 class="text-2xl font-semibold mb-4 text-cyan-400">Histoire</h3>
+                <p class="text-gray-200 leading-relaxed mb-4">
+                    Fondée en 1928, Exacompta est à l'origine un atelier de fabrication de registres et d'agendas 
+                    implanté à Paris. L'entreprise est située au bord du canal Saint-Martin dans le 10e arrondissement, 
+                    dans les murs de l'ancienne usine électrique de la compagnie parisienne de l'air comprimé.
+                </p>
+                <p class="text-gray-200 leading-relaxed">
+                    Aujourd'hui présidée par François Nusse et dirigée par Charles Nusse (respectivement fils et 
+                    petit-fils du fondateur), Exacompta dispose de 12 sites de production en France et en Europe.
+                </p>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 rounded-lg p-8 border border-blue-500 border-opacity-30">
+                <h3 class="text-2xl font-semibold mb-4 text-cyan-400">Activités principales</h3>
+                <div class="space-y-3 text-gray-200">
+                    <p>• Production de registres, agendas et fournitures de bureau</p>
+                    <p>• Filiale <strong>Sill</strong> : cahiers, agendas, cartables et fournitures scolaires avec designs originaux</p>
+                    <p>• Filiale <strong>AFA</strong> (Ateliers de Fabrication d'Agendas) : agendas, classeurs, pochettes, carnets</p>
+                    <p>• Sites : Vémars, Pantin, Paris, Wizernes, Breteuil, Houdan, Autrèche, Château-Renault, Carquefou, Échire, Suisse, Allemagne, UK, Italie</p>
+                </div>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 rounded-lg p-8 border border-blue-500 border-opacity-30">
+                <h3 class="text-2xl font-semibold mb-4 text-cyan-400">Engagement écologique</h3>
+                <p class="text-gray-200 leading-relaxed mb-4">
+                    Exacompta possède des labels écologiques garantissant le respect des normes environnementales. L'entreprise s'engage à :
+                </p>
+                <ul class="space-y-2 text-gray-200">
+                    <li>▸ Offrir aux consommateurs la possibilité d'acheter écologique au quotidien</li>
+                    <li>▸ Maintenir une politique de prix identique sur les produits écologiques</li>
+                    <li>▸ Garantir des certifications indépendantes et une démarche authentique</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12">Mes Réalisations en Entreprise</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="card rounded-lg p-6">
+                <span class="text-xs bg-blue-600 px-3 py-1 rounded-full">Alternance Exacompta</span>
+                <h3 class="text-xl font-semibold my-3">Création et gestion de comptes utilisateurs</h3>
+                <p class="text-gray-300 text-sm mb-4">
+                    Création de comptes utilisateurs sur Active Directory et Microsoft 365, configuration des boîtes aux lettres, 
+                    attribution des groupes de distribution et gestion des accès réseau.
+                </p>
+                <p class="text-xs text-cyan-400 mb-2">Technologies : Active Directory, Microsoft 365, PowerShell</p>
+                <p class="text-xs text-gray-400">Compétences : Administration AD • Gestion des identités • Groupes de sécurité</p>
+            </div>
+            
+            <div class="card rounded-lg p-6">
+                <span class="text-xs bg-blue-600 px-3 py-1 rounded-full">Alternance Exacompta</span>
+                <h3 class="text-xl font-semibold my-3">Installation et mise en service de machines</h3>
+                <p class="text-gray-300 text-sm mb-4">
+                    Déploiement complet de postes de travail Dell : mises à jour système, intégration au domaine, 
+                    installation automatisée de logiciels via KACE, configuration des imprimantes et lecteurs réseau.
+                </p>
+                <p class="text-xs text-cyan-400 mb-2">Technologies : Windows, KACE, Active Directory, Dell Update</p>
+                <p class="text-xs text-gray-400">Compétences : Déploiement de postes • Gestion de parc • Automatisation</p>
+            </div>
+            
+            <div class="card rounded-lg p-6">
+                <span class="text-xs bg-blue-600 px-3 py-1 rounded-full">Alternance Exacompta</span>
+                <h3 class="text-xl font-semibold my-3">Gestion des appareils mobiles (MDM)</h3>
+                <p class="text-gray-300 text-sm mb-4">
+                    Intégration et configuration d'appareils mobiles iPhone dans le système de gestion MDM, 
+                    permettant l'administration et la sécurisation des terminaux à distance.
+                </p>
+                <p class="text-xs text-cyan-400 mb-2">Technologies : MDM, iOS, Gestion mobile</p>
+                <p class="text-xs text-gray-400">Compétences : Mobile Device Management • Sécurité mobile • Support utilisateur</p>
+            </div>
+            
+            <div class="card rounded-lg p-6">
+                <span class="text-xs bg-blue-600 px-3 py-1 rounded-full">Alternance Exacompta</span>
+                <h3 class="text-xl font-semibold my-3">Configuration réseau DHCP</h3>
+                <p class="text-gray-300 text-sm mb-4">
+                    Création de réservations DHCP pour les équipements réseau (imprimantes, serveurs), 
+                    respect du plan d'adressage IP et nommage cohérent du parc informatique.
+                </p>
+                <p class="text-xs text-cyan-400 mb-2">Technologies : DHCP, Windows Server, Gestion IP</p>
+                <p class="text-xs text-gray-400">Compétences : Administration réseau • Plan d'adressage • Documentation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12">Compétences</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+            <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-blue-500 border-opacity-30">
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Systèmes</h3>
+                <p class="text-gray-200 text-sm">Windows Server • Active Directory • Microsoft 365 • KACE • PowerShell • Dell Update</p>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-blue-500 border-opacity-30">
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Réseaux</h3>
+                <p class="text-gray-200 text-sm">TCP/IP • DHCP • VPN • Plan d'adressage • Configuration réseau</p>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-blue-500 border-opacity-30">
+                <h3 class="text-xl font-semibold mb-4 text-cyan-400">Sécurité et Mobilité</h3>
+                <p class="text-gray-200 text-sm">MDM • Groupes de sécurité • Antivirus • Gestion des accès • Support utilisateur • Documentation</p>
+            </div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto bg-white bg-opacity-10 rounded-lg p-8 border border-blue-500 border-opacity-30 mb-8">
+            <h3 class="text-2xl font-semibold mb-4 text-center">Expérience Professionnelle</h3>
+            <h4 class="text-lg font-semibold text-cyan-400">Alternant Technicien Systèmes et Réseaux</h4>
+            <p class="text-gray-300 mb-3">Exacompta-Clairefontaine • 2023 - Présent</p>
+            <div class="grid md:grid-cols-2 gap-3 text-gray-200 text-sm">
+                <p>▸ Support technique et dépannage utilisateur</p>
+                <p>▸ Gestion et remplacement de matériel</p>
+                <p>▸ Extraction et harmonisation des données du parc</p>
+                <p>▸ Déploiement complet de postes de travail</p>
+                <p>▸ Configuration des accès réseau</p>
+                <p>▸ Relation avec les utilisateurs et fournisseurs</p>
+            </div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto bg-gradient-to-r from-blue-900 to-cyan-900 rounded-lg p-6 border border-cyan-400 border-opacity-30">
+            <h4 class="text-lg font-semibold mb-3 text-cyan-400">Ce que j'ai appris</h4>
+            <p class="text-gray-200 italic">
+                "Le monde de l'informatique est bien plus vaste et complexe que ce à quoi je m'attendais. 
+                J'ai appris à être rigoureux dans mon travail, à assurer un suivi d'avancement et à ne jamais 
+                me reposer sur mes acquis. Il faut toujours chercher plus loin que ce que l'on voit de prime 
+                abord, car un problème peut être plus compliqué qu'il ne laisse paraître."
+            </p>
+        </div>
+    </section>
+
+    <!-- VEILLE:START -->
+    <section id="veille" class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-4">Veille technologique</h2>
+        <p class="text-center text-cyan-400 text-xl mb-2">Les processeurs Intel</p>
+        <p class="text-center text-gray-400 text-sm mb-12">16 informations collectées · mise à jour le 28/10/2026</p>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
+            <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-blue-500 border-opacity-30">
+                <h3 class="text-lg font-semibold mb-2 text-cyan-400">Pourquoi ce sujet ?</h3>
+                <p class="text-gray-200 text-sm leading-relaxed">Le processeur est au cœur de tous les postes et serveurs que je déploie. Suivre Intel (architectures, gravure, IA, fonderie) m'aide à comprendre les choix de matériel en entreprise.</p>
+            </div>
+            <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-blue-500 border-opacity-30">
+                <h3 class="text-lg font-semibold mb-2 text-cyan-400">Mes sources</h3>
+                <p class="text-gray-200 text-sm leading-relaxed">En priorité les sources officielles (Intel Newsroom, AMD, ASML…), complétées par la presse tech reconnue (Tom's Hardware, Cowcotland, Overclocking.com…). Les fuites sont signalées comme non confirmées.</p>
+            </div>
+            <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-blue-500 border-opacity-30">
+                <h3 class="text-lg font-semibold mb-2 text-cyan-400">Ma méthode</h3>
+                <p class="text-gray-200 text-sm leading-relaxed">Collecte hebdomadaire semi-automatisée, puis tri, résumé et classement en 5 catégories dans un tableau de veille, avec une synthèse des tendances chaque semaine.</p>
+            </div>
+        </div>
+
+        <div id="veille-synthese" class="max-w-6xl mx-auto bg-gradient-to-r from-blue-900 to-cyan-900 rounded-lg p-6 border border-cyan-400 border-opacity-30 mb-10"></div>
+
+        <div id="veille-filtres" class="flex flex-wrap gap-2 justify-center mb-8"></div>
+        <div id="veille-liste" class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto"></div>
+        <div class="text-center mt-8">
+            <button id="veille-plus" class="border-2 border-cyan-400 hover:bg-cyan-400 hover:bg-opacity-20 px-6 py-3 rounded-lg transition">Voir plus</button>
+        </div>
+    </section>
+    <script type="application/json" id="veille-data">{"entrees": [{"date": "05/01/2026", "source": "Seeking Alpha", "titre": "Intel dévoile les Core Ultra Series 3 (Panther Lake) au CES 2026, gravure 18A", "url": "https://seekingalpha.com/news/4536885-intel-unveils-core-ultra-series-3-processors-at-ces-2026", "categorie": "Innovation technique", "resume": "Intel présente la première plateforme AI PC sur procédé Intel 18A, avec les modèles Core Ultra X9 et X7 (jusqu'à 16 cœurs CPU).", "mots_cles": "Intel, Core Ultra, Panther Lake, 18A, CES 2026", "ajout": "manuel"}, {"date": "08/04/2026", "source": "SK-Web", "titre": "Guide complet des processeurs Intel 2026 : Arrow Lake, Panther Lake, NPU", "url": "https://sk-web.fr/article/guide-processeurs-intel-2026", "categorie": "Innovation technique", "resume": "Comparaison des générations Intel (Raptor Lake Refresh, Arrow Lake, Panther Lake), avec NPU intégré (jusqu'à 48 TOPS) pour la certification Copilot+ PC.", "mots_cles": "Intel, Arrow Lake, Panther Lake, NPU, Copilot+", "ajout": "manuel"}, {"date": "23/02/2026", "source": "Cowcotland", "titre": "Intel Nova Lake-S (Core Ultra 400) repoussé au CES 2027", "url": "https://www.cowcotland.com/news/99798/intel-nova-lake-s-une-presentation-au-prochain-ces-en-2027.html", "categorie": "Marché et acteurs", "resume": "La nouvelle architecture desktop Nova Lake (Core Ultra 400) glisserait du second semestre 2026 vers le CES 2027, en confrontation directe avec l'AMD Zen 6.", "mots_cles": "Intel, Nova Lake, Core Ultra 400, CES 2027", "ajout": "manuel"}, {"date": "06/05/2026", "source": "Overclocking.com", "titre": "Roadmap Intel jusqu'en 2028 : Razor Lake, Titan Lake, Hammer Lake, Moon Lake", "url": "https://overclocking.com/roadmap-intel-les-sorties-des-bleus-jusquen-2028/", "categorie": "Innovation technique", "resume": "Fuite d'une feuille de route Intel prévoyant un lancement d'architecture par an jusqu'en 2028, incluant des puces basse consommation pour Chromebooks face à Qualcomm/Mediatek.", "mots_cles": "Intel, roadmap, Razor Lake, Titan Lake, Hammer Lake", "ajout": "manuel"}, {"date": "06/06/2026", "source": "OMGPU", "titre": "Nova Lake : 52 cœurs, fabrication TSMC, nouvelles cartes mères Z990", "url": "https://www.omgpu.com/rumeurs-intel-nova-lake-sortie-debut-2027-infos-52-coeurs-et-consommation-overclocking-multi-coeur-cartes-z990-z970-au-computex/", "categorie": "Innovation technique", "resume": "Nova Lake introduirait les microarchitectures Coyote Cove (P-cores) et Arctic Wolf (E-cores), graphismes Xe3/Xe3P, avec une fabrication confiée à TSMC et une consommation pouvant dépasser 700W en PL4.", "mots_cles": "Intel, Nova Lake, TSMC, Coyote Cove, Arctic Wolf", "ajout": "manuel"}, {"date": "01/06/2026", "source": "Intel Newsroom", "titre": "Computex 2026 : lancement des Xeon 6+ (Clearwater Forest), premiers Xeon gravés en Intel 18A", "url": "https://www.intel.com/content/www/us/en/newsroom/news/data-center/intel-puts-agentic-ai-xeon-6-networking-ai-systems.html", "categorie": "Innovation technique", "resume": "Jusqu'à 288 E-cores et des performances annoncées jusqu'à 2,5x supérieures à la génération précédente ; systèmes disponibles chez ASUS, Dell, HPE, Lenovo, Supermicro. Intel détaille aussi son GPU d'inférence Crescent Island (480 Go LPDDR5X, 350 W).", "mots_cles": "Intel, Xeon 6+, Clearwater Forest, 18A, Computex 2026", "ajout": "auto"}, {"date": "16/06/2026", "source": "Intel Newsroom", "titre": "Intel Foundry détaille ses jalons de procédés au VLSI Symposium (Intel 18A-P)", "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-foundry-details-process-milestones-future-innovation-at-vlsi-symposium.html", "categorie": "Production et fonderie", "resume": "Le procédé 18A-P entre en production à risque : +9 % de performances à consommation égale ou -18 % de consommation à performances égales par rapport à 18A, et meilleure résistance thermique (20 à 40 %).", "mots_cles": "Intel Foundry, 18A-P, VLSI, gravure", "ajout": "auto"}, {"date": "30/06/2026", "source": "Intel Newsroom", "titre": "Arc G3 : Intel et MSI co-conçoivent la première console portable sur processeur Intel dédié", "url": "https://www.intel.com/content/www/us/en/newsroom/news/client-computing/three-ways-intel-msi-co-engineered-worlds-first-arc-g3-handheld.html", "categorie": "Efficacité énergétique et performance", "resume": "Nouvelle famille Arc G-Series, SoC conçu spécifiquement pour les consoles portables (Intel annonce +42 % de performances, efficacité x2, jusqu'à 11 h d'autonomie). Premier appareil : MSI Claw 8 EX AI+, Acer et OneXPlayer suivent.", "mots_cles": "Intel, Arc G3, G-Series, MSI Claw, gaming portable", "ajout": "auto"}, {"date": "17/07/2026", "source": "TechTimes (fuite VideoCardz)", "titre": "Nova Lake confirmé sous le nom Core Ultra 400, lancement échelonné en 4 vagues sur 2027", "url": "https://www.techtimes.com/articles/320844/20260717/intel-nova-lake-confirmed-core-ultra-400-four-wave-2027-rollout-52-cores-last.htm", "categorie": "Stratégie et marché", "resume": "Fuite de documents internes (non confirmés par Intel) : modèles 28 cœurs dès janvier 2027, versions K en mars-avril, puis le modèle phare 52 cœurs entre mai et septembre 2027, sur nouveau socket LGA 1954.", "mots_cles": "Intel, Nova Lake, Core Ultra 400, LGA 1954, fuite", "ajout": "auto"}, {"date": "23/07/2026", "source": "Intel Newsroom", "titre": "Intel publie ses résultats du 2e trimestre 2026", "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-reports-second-quarter-2026-financial-results.html", "categorie": "Stratégie et marché", "resume": "Chiffre d'affaires de 16,1 Md$ (+25 % sur un an), porté par le data center (+59 %). Panther Lake est en partie produit en grand volume avec la lithographie High-NA EUV d'ASML.", "mots_cles": "Intel, résultats financiers, Q2 2026, data center", "ajout": "auto"}, {"date": "11/08/2026", "source": "Intel Newsroom", "titre": "Intel lève 20 milliards de dollars en actions pour financer l'expansion de ses usines", "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-announces-upsize-and-pricing-of-20-billion-common-stock-offering.html", "categorie": "Production et fonderie", "resume": "Augmentation de capital portée de 15 à 20 Md$ pour financer de nouvelles usines et l'activité de fonderie, Intel visant la production en volume du procédé 14A en 2028.", "mots_cles": "Intel Foundry, 14A, augmentation de capital, usines", "ajout": "auto"}, {"date": "24/08/2026", "source": "Intel Newsroom", "titre": "Hot Chips 2026 : Intel présente l'architecture du futur Xeon Diamond Rapids", "url": "https://www.intel.com/content/www/us/en/newsroom/news/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026.html", "categorie": "Innovation technique", "resume": "Jusqu'à 256 cœurs, 1,28 Go de cache, 16 canaux mémoire et PCIe Gen6/CXL 3.0. Gravure Intel 18A-P, empilement 3D Foveros Direct et interconnexion UCIe-S. Sortie attendue en 2027 face à l'AMD EPYC Venice.", "mots_cles": "Intel, Xeon, Diamond Rapids, 18A-P, Foveros, Hot Chips", "ajout": "auto"}, {"date": "07/09/2026", "source": "Intel Newsroom", "titre": "Intel Foundry et ASML : la lithographie High-NA EUV passe le million de wafers", "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry/intel-foundry-asml-accelerate-industry-readiness-for-high-na-euv.html", "categorie": "Production et fonderie", "resume": "Plus d'un million de wafers traités en High-NA EUV ; la technique est utilisée en production de masse pour certaines couches d'une partie des Panther Lake (Intel 18A).", "mots_cles": "Intel Foundry, ASML, High-NA EUV, 18A, Panther Lake", "ajout": "auto"}, {"date": "21/09/2026", "source": "Intel Newsroom", "titre": "Lancement des premiers Googlebook équipés de Core Ultra Series 3", "url": "https://www.intel.com/content/www/us/en/newsroom/news/client-computing/googlebook-launches-with-intel-core-ultra-series-3-processors.html", "categorie": "Stratégie et marché", "resume": "Acer, ASUS et Lenovo lancent les premiers Googlebook sous Panther Lake, disponibles dès le 5 octobre 2026 aux États-Unis, au Royaume-Uni, en France, en Allemagne, etc.", "mots_cles": "Intel, Core Ultra Series 3, Panther Lake, Googlebook", "ajout": "auto"}, {"date": "12/10/2026", "source": "Intel Newsroom", "titre": "OCP 2026 : le GPU d'inférence Crescent Island devient l'Intel GPU D-Series", "url": "https://www.intel.com/content/www/us/en/newsroom/news/artificial-intelligence/intel-accelerates-open-infrastructure-agentic-ai-era.html", "categorie": "Intelligence artificielle et NPU", "resume": "Carte PCIe refroidie par air : jusqu'à 480 Go de LPDDR5X, 1,5 To/s de bande passante, 1,3 PFLOPS en FP8 pour 350 W. Échantillons en cours chez les clients, pas encore de prix ni de date de sortie.", "mots_cles": "Intel, GPU D-Series, Crescent Island, Xe3P, inférence IA, OCP", "ajout": "auto"}, {"date": "20/10/2026", "source": "Intel Newsroom", "titre": "AMD et Intel unifient leurs optimisations x86 pour PyTorch dans oneDNN", "url": "https://www.intel.com/content/www/us/en/newsroom/news/data-center/amd-intel-simplify-x86-ai-development-with-pytorch.html", "categorie": "Intelligence artificielle et NPU", "resume": "Les deux concurrents font de oneDNN la bibliothèque par défaut pour accélérer PyTorch sur x86 et préparent ensemble ACE (AI Compute Extensions), un nouveau jeu d'instructions pour les calculs matriciels.", "mots_cles": "Intel, AMD, x86, PyTorch, oneDNN, ACE", "ajout": "auto"}], "synthese": {"semaine": "rattrapage juin – octobre 2026", "tendances": ["Le procédé 18A s'impose : Panther Lake (PC), Xeon 6+ (serveurs), puis 18A-P pour Diamond Rapids en 2027 ; la fonderie se finance (+20 Md$) en visant le 14A en 2028.", "Virage IA en data center (GPU D-Series, Xeon) et alliance inédite avec AMD sur le logiciel x86, tandis que Nova Lake (Core Ultra 400) glisse vers 2027 selon les fuites."], "sources": "Intel Newsroom (communiqués officiels) ; TechTimes / VideoCardz pour les fuites Nova Lake."}, "derniere_maj": "28/10/2026"}</script>
+    <script>
+    (function () {
+        const data = JSON.parse(document.getElementById('veille-data').textContent);
+        const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+        const toDate = d => { const [j, m, a] = d.split('/'); return new Date(+a, +m - 1, +j); };
+        const items = data.entrees.slice().sort((a, b) => toDate(b.date) - toDate(a.date));
+        const cats = [...new Set(items.map(e => e.categorie))].sort();
+        let filtre = '', visibles = 6;
+
+        const syn = data.synthese;
+        const boxS = document.getElementById('veille-synthese');
+        if (syn) {
+            boxS.innerHTML = '<h3 class="text-lg font-semibold mb-3 text-cyan-400">Synthèse (' + esc(syn.semaine) + ')</h3>'
+                + syn.tendances.map(t => '<p class="text-gray-200 text-sm mb-2">▸ ' + esc(t) + '</p>').join('')
+                + '<p class="text-gray-400 text-xs mt-3">Sources principales : ' + esc(syn.sources) + '</p>';
+        } else boxS.remove();
+
+        const boxF = document.getElementById('veille-filtres');
+        const btn = (label, val) => '<button data-c="' + esc(val) + '" class="vf text-sm px-4 py-2 rounded-full border border-blue-500 border-opacity-50 transition hover:border-cyan-400">' + esc(label) + '</button>';
+        boxF.innerHTML = btn('Toutes', '') + cats.map(c => btn(c, c)).join('');
+
+        const liste = document.getElementById('veille-liste');
+        const plus = document.getElementById('veille-plus');
+        function rendu() {
+            const sel = items.filter(e => !filtre || e.categorie === filtre);
+            liste.innerHTML = sel.slice(0, visibles).map(e =>
+                '<div class="card rounded-lg p-6 flex flex-col">'
+                + '<div class="flex justify-between items-center gap-2 mb-3"><span class="text-xs bg-blue-600 px-3 py-1 rounded-full">' + esc(e.categorie) + '</span>'
+                + '<span class="text-xs text-gray-400">' + esc(e.date) + ' · ' + esc(e.source) + '</span></div>'
+                + '<h3 class="text-lg font-semibold mb-2"><a href="' + esc(e.url) + '" target="_blank" rel="noopener" class="hover:text-cyan-400 transition">' + esc(e.titre) + ' ↗</a></h3>'
+                + '<p class="text-gray-300 text-sm mb-4 flex-grow">' + esc(e.resume) + '</p>'
+                + '<p class="text-xs text-cyan-400">' + esc(e.mots_cles) + '</p></div>').join('');
+            plus.style.display = sel.length > visibles ? '' : 'none';
+            boxF.querySelectorAll('.vf').forEach(b => {
+                const on = b.dataset.c === filtre;
+                b.classList.toggle('bg-cyan-500', on); b.classList.toggle('bg-opacity-30', on);
+                b.classList.toggle('text-cyan-300', on);
+            });
+        }
+        boxF.addEventListener('click', ev => { const b = ev.target.closest('.vf'); if (!b) return; filtre = b.dataset.c; visibles = 6; rendu(); });
+        plus.addEventListener('click', () => { visibles += 6; rendu(); });
+        rendu();
+    })();
+    </script>
+    <!-- VEILLE:END -->
+
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12">Contact</h2>
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white bg-opacity-10 rounded-lg p-8 border border-blue-500 border-opacity-30">
+                <p class="text-center text-gray-200 mb-8">N'hésitez pas à me contacter pour toute question ou opportunité professionnelle.</p>
+                <div class="space-y-4">
+                    <a href="mailto:quentin.bdt@hotmail.com" class="flex items-center gap-4 bg-blue-600 hover:bg-blue-700 p-4 rounded-lg transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span>quentin.bdt@hotmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-30 border-t border-blue-500 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>© 2026 - BODART Quentin - Portfolio BTS SIO SISR</p>
+        </div>
+    </footer>
+</body>
+</html>
